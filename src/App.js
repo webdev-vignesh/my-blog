@@ -1,10 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="container bg-red-500">
-      App Component
+    <div className="max-w-screen-md mx-auto pt-20">
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
     </div>
   );
 }
