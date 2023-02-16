@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Article from './pages/Article';
 import ArticlesList from './pages/ArticlesList';
+import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar';
+
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/article/:name" element={<Article/>} />
           <Route path="/articles-list" element={<ArticlesList/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </div>
     </div>
